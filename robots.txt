@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kleintierzuchtverein-marbach-am-neckar.de/sitemap.xml

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jetzt Mitglied werden – Kleintierzuchtverein Marbach Z 99 e.V.</title>
+<meta name="description" content="Werden Sie Mitglied im Kleintierzuchtverein Marbach Z 99 e.V. – Gemeinschaft, Fachwissen und Freude an der Kleintierzucht in Marbach am Neckar seit 1965.">
+<link rel="canonical" href="https://kleintierzuchtverein-marbach-am-neckar.de/landingpage.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jetzt Mitglied werden – Kleintierzuchtverein Marbach Z 99 e.V.">
+<meta property="og:description" content="Gemeinschaft, Fachwissen und Freude an der Kleintierzucht in Marbach am Neckar seit 1965.">
+<meta property="og:image" content="https://kleintierzuchtverein-marbach-am-neckar.de/images/vereinslogo.png">
+<meta property="og:locale" content="de_DE">
+<meta name="geo.region" content="DE-BW">
+<meta name="geo.placename" content="Marbach am Neckar">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="preload" as="style" href="fonts.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="fonts.css"></noscript>
+<style>
+  html{overflow-x:clip; max-width:100vw; -webkit-tap-highlight-color:transparent;}
+  a, button, .btn{ -webkit-tap-highlight-color:transparent; }
+  :root{
+    --cream:#F7F2E6; --cream-2:#EFE6D2; --ink:#3B3324; --ink-soft:#5C5340;
+    --olive:#6B7346; --olive-dark:#4E5533; --terracotta:#BE6A3F; --gold:#C79A3D; --teal:#4F7A6F; --brown:#7A4A30;
+    --line:#DCD0B4;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Karla',sans-serif; font-size:17px; line-height:1.6; position:relative; overflow-x:clip; max-width:100vw;}
+  .wrap{max-width:900px; margin:0 auto; padding:0 28px;}
+  h1,h2{font-family:'Fraunces',serif; font-weight:600; margin:0;}
+  p{margin:0;}
+  a{text-decoration:none;}
+
+  .ambient-bg{position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none;}
+  .ambient-bg span{position:absolute; border-radius:50%; filter:blur(90px); opacity:.4; mix-blend-mode:multiply; animation:drift 26s ease-in-out infinite alternate;}
+  .ambient-bg span:nth-child(1){width:460px; height:460px; top:-160px; left:-120px; background:var(--terracotta);}
+  .ambient-bg span:nth-child(2){width:400px; height:400px; bottom:-140px; right:-120px; background:var(--olive); animation-delay:-8s;}
+  @keyframes drift{ 0%{transform:translate(0,0) scale(1);} 50%{transform:translate(30px,-20px) scale(1.1);} 100%{transform:translate(-20px,20px) scale(.95);} }
+  main{position:relative; z-index:1;}
+
+  header{padding:26px 0; text-align:center;}
+  .brand{display:inline-flex; align-items:center; gap:14px; text-decoration:none;}
+  .brand img{width:60px; height:60px; border-radius:50%; border:2px solid var(--cream); box-shadow:0 4px 14px -4px rgba(59,51,36,.5);}
+  .brand span{font-family:'Fraunces',serif; font-weight:600; font-size:16px; color:var(--ink); text-align:left; display:block;}
+  .brand small{display:block; font-family:'Karla',sans-serif; font-weight:400; font-size:11.5px; color:var(--ink-soft);}
+
+  .hero{padding:40px 0 60px; text-align:center;}
+  .eyebrow{display:inline-flex; align-items:center; gap:10px; font-style:italic; font-weight:500; font-size:15px; color:var(--olive-dark); margin-bottom:16px;}
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--olive-dark); display:inline-block;}
+  .eyebrow::after{content:""; width:7px; height:7px; border-radius:50%; background:var(--terracotta); display:inline-block; animation:dot-pulse 2.4s ease-out infinite;}
+  @keyframes dot-pulse{0%{box-shadow:0 0 0 0 rgba(190,106,63,.55);}70%{box-shadow:0 0 0 9px rgba(190,106,63,0);}100%{box-shadow:0 0 0 0 rgba(190,106,63,0);}}
+  h1{font-size:44px; line-height:1.15; max-width:16ch; margin:0 auto;}
+  h1 em{font-style:italic; color:var(--terracotta);}
+  .lead{margin:22px auto 0; max-width:52ch; font-size:17.5px; color:var(--ink-soft);}
+
+  .cta-row{display:flex; justify-content:center; gap:16px; margin-top:36px; flex-wrap:wrap;}
+  .btn{
+    position:relative; isolation:isolate;
+    display:inline-flex; align-items:center; gap:8px;
+    padding:15px 30px; border-radius:100px;
+    font-family:'Karla',sans-serif; font-weight:700; font-size:15.5px;
+    border:1px solid transparent; cursor:pointer;
+    transition:transform .3s ease, background .25s ease, border-color .25s ease, color .25s ease;
+    animation:btn-idle 3.6s ease-in-out infinite;
+  }
+  .btn::before{
+    content:""; position:absolute; z-index:-1; inset:-22%; border-radius:100px;
+    background:radial-gradient(circle, var(--glow) 0%, transparent 72%); filter:blur(16px);
+    animation:veil-drift 3.6s ease-in-out infinite;
+  }
+  .btn-primary{--glow:rgba(78,85,51,.65); background:var(--olive-dark); color:var(--cream);}
+  .btn-ghost{--glow:rgba(59,51,36,.45); background:transparent; color:var(--ink); border:1.5px solid var(--ink);}
+  .btn-ghost:hover{background:var(--ink); color:var(--cream);}
+  .btn:hover{animation:btn-float 1.9s ease-in-out infinite;}
+  @keyframes btn-idle{0%,100%{transform:translateY(0);}50%{transform:translateY(-3px);}}
+  @keyframes btn-float{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
+  @keyframes veil-drift{0%,100%{transform:scale(1) translateY(0); opacity:.35;}50%{transform:scale(1.22) translateY(-5px); opacity:.7;}}
+
+  .reasons{padding:50px 0 70px;}
+  .reasons-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px; margin-top:8px;}
+  .reason{background:#fff9ef; border:1px solid var(--line); border-radius:22px; padding:28px 24px; text-align:center;}
+  .reason .num{font-family:'Fraunces',serif; font-size:26px; color:var(--terracotta); margin-bottom:10px;}
+  .reason h2{font-size:18px; margin-bottom:8px;}
+  .reason p{font-size:14.5px; color:var(--ink-soft);}
+  .section-head{text-align:center; max-width:560px; margin:0 auto 8px;}
+  .section-head h2{font-size:28px;}
+
+  .steps{background:var(--olive-dark); color:var(--cream); padding:60px 0; position:relative; overflow:hidden;}
+  .steps::before{content:""; position:absolute; inset:-30%; opacity:.3; background:radial-gradient(circle at 20% 30%, var(--gold) 0%, transparent 45%), radial-gradient(circle at 85% 70%, var(--terracotta) 0%, transparent 45%); filter:blur(60px);}
+  .steps .wrap{position:relative;}
+  .steps h2{color:var(--cream); text-align:center; font-size:28px; margin-bottom:34px;}
+  .steps-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .fee-box{
+    margin:44px auto 0; max-width:420px; text-align:center;
+    background:rgba(247,242,230,.1); border:1px solid rgba(247,242,230,.3);
+    border-radius:18px; padding:26px 30px;
+  }
+  .fee-label{margin:0 0 14px; font-size:14px; letter-spacing:.04em; text-transform:uppercase; opacity:.8;}
+  .fee-amounts{display:flex; justify-content:center; gap:48px;}
+  .fee-amounts b{display:block; font-family:'Fraunces',serif; font-size:28px; font-weight:600;}
+  .fee-amounts span{display:block; font-size:13.5px; opacity:.75; margin-top:2px;}
+  .step{text-align:center;}
+  .step .circle{width:46px; height:46px; border-radius:50%; background:rgba(247,242,230,.14); border:1px solid rgba(247,242,230,.35); display:flex; align-items:center; justify-content:center; margin:0 auto 14px; font-family:'Fraunces',serif; font-weight:600;}
+  .step p{font-size:14.5px; color:#E4DEC9;}
+
+  .final-cta{padding:70px 0 90px; text-align:center;}
+  .final-cta h2{font-size:30px; max-width:18ch; margin:0 auto 14px;}
+  .final-cta p{color:var(--ink-soft); max-width:44ch; margin:0 auto 30px;}
+
+  footer{padding:30px 0 46px; text-align:center; font-size:12.5px; color:var(--ink-soft);}
+  footer a{color:var(--olive-dark); font-weight:700;}
+
+  @media (max-width:760px){
+    h1{font-size:32px;}
+    .reasons-grid, .steps-grid{grid-template-columns:1fr;}
+  }
+
+  .pre-animate{opacity:0; transform:translateY(46px) scale(.96); transition:opacity .8s ease, transform .7s cubic-bezier(.22,1,.36,1);}
+  .pre-animate.in-view{opacity:1; transform:translateY(0) scale(1);}
+</style>
+</head>
+<body>
+
+<div class="ambient-bg" aria-hidden="true"><span></span><span></span></div>
+
+<main>
+  <header>
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <img src="images/vereinslogo.png" width="220" height="220" loading="eager" decoding="async" alt="Logo Kleintierzuchtverein Marbach Z 99 e.V.">
+        <span>Kleintierzuchtverein Marbach<small>Z 99 e.V. · seit 1965</small></span>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow" style="justify-content:center;">Neu in Marbach? Herzlich willkommen</p>
+      <h1>Werden Sie Teil unserer <em>Kleintierzucht-Familie</em></h1>
+      <p class="lead">Ob erfahrene Züchterin, erfahrener Züchter oder blutiger Anfänger: Beim Kleintierzuchtverein Marbach Z 99 e.V. finden Sie Gemeinschaft, Fachwissen und Freude an Hühnern, Kaninchen, Wellensittichen, Enten, Puten oder Wachteln.</p>
+      <div class="cta-row">
+        <a href="index.html#kontakt" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
+        <a href="index.html" class="btn btn-ghost">Erst mal umschauen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="reasons">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" style="justify-content:center;">Warum mitmachen</p>
+        <h2>Drei gute Gründe für eine Mitgliedschaft</h2>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason">
+          <div class="num">01</div>
+          <h2>Wissen aus erster Hand</h2>
+          <p>Erfahrene Züchter·innen geben ihr Wissen zu Haltung, Zucht und Rassestandards direkt weiter – ideal für den Einstieg.</p>
+        </div>
+        <div class="reason">
+          <div class="num">02</div>
+          <h2>Echte Gemeinschaft</h2>
+          <p>Vereinsabende, Ausstellungen und Feste bringen Jung und Alt zusammen, die eine gemeinsame Leidenschaft teilen.</p>
+        </div>
+        <div class="reason">
+          <div class="num">03</div>
+          <h2>Verantwortung übernehmen</h2>
+          <p>Sie tragen aktiv zum Erhalt traditioneller Kleintierrassen und zu artgerechter, verantwortungsvoller Tierhaltung bei.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap">
+      <h2>So werden Sie Mitglied</h2>
+      <div class="steps-grid">
+        <div class="step"><div class="circle">1</div><p>Kontakt aufnehmen – per Telefon, E-Mail oder Kontaktformular</p></div>
+        <div class="step"><div class="circle">2</div><p>Unverbindlich bei einem Vereinsabend vorbeischauen</p></div>
+        <div class="step"><div class="circle">3</div><p>Mitgliedsantrag ausfüllen – wir unterstützen Sie dabei</p></div>
+      </div>
+      <div class="fee-box">
+        <p class="fee-label">Mitgliedsbeitrag pro Jahr</p>
+        <div class="fee-amounts">
+          <div><b>40&nbsp;€</b><span>Männer</span></div>
+          <div><b>25&nbsp;€</b><span>Frauen</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <h2>Wir freuen uns darauf, Sie kennenzulernen</h2>
+      <p>Kein Druck, keine Verpflichtung – kommen Sie einfach vorbei und stellen Sie Ihre Fragen persönlich.</p>
+      <a href="index.html#kontakt" class="btn btn-primary">Kontakt aufnehmen</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 1965–2026 Kleintierzuchtverein Marbach Z 99 e.V. · <a href="index.html">Zur vollständigen Website</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+</footer>
+
+<script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  if (!location.hash) {
+    window.scrollTo(0, 0);
+  }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+  }, { threshold: .1, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reason, .step').forEach((el, i) => {
+    el.classList.add('pre-animate');
+    el.style.transitionDelay = (i * 0.08) + 's';
+    io.observe(el);
+  });
+</script>
+
+</body>
+</html>
