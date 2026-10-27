@@ -35,7 +35,12 @@
   .event-date{font-size:13px; font-weight:700; font-family:'JetBrains Mono',monospace; letter-spacing:.02em; text-transform:uppercase; color:var(--terracotta); margin:0 0 6px;}
   h1{font-size:34px; margin:0 0 18px;}
   .lead{font-size:17px; color:var(--ink-soft); max-width:64ch; margin:0 0 40px;}
-  .back{display:inline-flex; align-items:center; gap:6px; font-size:14px; font-weight:700; text-decoration:none; color:var(--olive-dark); margin-bottom:28px;}
+  .back{display:inline-flex; align-items:center; gap:10px; font-size:14.5px; font-weight:700; text-decoration:none; color:var(--olive-dark); background:var(--cream-2); border:1.5px solid var(--olive-dark); border-radius:3px; padding:10px 20px 10px 14px; margin-bottom:28px; box-shadow:0 3px 0 0 var(--line); transition:background .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;}
+  .back .arr{display:inline-flex; align-items:center; justify-content:center; width:24px; height:24px; border-radius:50%; background:var(--olive-dark); color:var(--cream); font-size:14px; line-height:1; transition:transform .2s ease, background .2s ease, color .2s ease;}
+  .back:hover{background:var(--olive-dark); color:var(--cream); box-shadow:0 3px 0 0 var(--gold); transform:translateY(-1px);}
+  .back:hover .arr{background:var(--gold); color:var(--ink); transform:translateX(-3px);}
+  .back:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+  @media (prefers-reduced-motion:reduce){ .back, .back .arr{transition:none;} .back:hover, .back:hover .arr{transform:none;} }
   .gallery{
     display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:44px;
   }
@@ -79,7 +84,7 @@
 
 <main>
   <div class="wrap">
-    <a href="index.html#events" class="back">← Zurück zu den Events</a>
+    <a href="index.html#events" class="back"><span class="arr" aria-hidden="true">←</span>Zurück zu den Events</a>
     <p class="eyebrow">Rückblick</p>
     <p class="event-date">12. Juli 2026</p>
     <h1>Tag der offenen Tür</h1>

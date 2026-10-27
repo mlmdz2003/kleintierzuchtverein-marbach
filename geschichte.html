@@ -46,7 +46,12 @@
   h1{font-size:34px; margin:0 0 18px; max-width:18ch;}
   .lead{font-size:17px; color:var(--ink-soft); max-width:66ch; margin:0 0 20px;}
   .source-note{font-size:13.5px; color:var(--ink-soft); font-style:italic; margin:0 0 44px;}
-  .back{display:inline-flex; align-items:center; gap:6px; font-size:14px; font-weight:700; text-decoration:none; color:var(--olive-dark); margin-bottom:28px;}
+  .back{display:inline-flex; align-items:center; gap:10px; font-size:14.5px; font-weight:700; text-decoration:none; color:var(--olive-dark); background:var(--cream-2); border:1.5px solid var(--olive-dark); border-radius:3px; padding:10px 20px 10px 14px; margin-bottom:28px; box-shadow:0 3px 0 0 var(--line); transition:background .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;}
+  .back .arr{display:inline-flex; align-items:center; justify-content:center; width:24px; height:24px; border-radius:50%; background:var(--olive-dark); color:var(--cream); font-size:14px; line-height:1; transition:transform .2s ease, background .2s ease, color .2s ease;}
+  .back:hover{background:var(--olive-dark); color:var(--cream); box-shadow:0 3px 0 0 var(--gold); transform:translateY(-1px);}
+  .back:hover .arr{background:var(--gold); color:var(--ink); transform:translateX(-3px);}
+  .back:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+  @media (prefers-reduced-motion:reduce){ .back, .back .arr{transition:none;} .back:hover, .back:hover .arr{transform:none;} }
 
   .era{margin:0 0 48px;}
   .era h2{font-size:21px; color:var(--terracotta); margin-bottom:4px;}
@@ -97,7 +102,7 @@
 
 <main>
   <div class="wrap">
-    <a href="index.html#geschichte" class="back">← Zurück zur Startseite</a>
+    <a href="index.html#geschichte" class="back"><span class="arr" aria-hidden="true">←</span>Zurück zur Startseite</a>
     <p class="eyebrow">Vereinsgeschichte</p>
     <h1>Von 1932 bis heute: über 90 Jahre Kleintierzucht in Marbach</h1>
     <p class="lead">Am 21. Dezember 1932 gründeten 15 Züchter in der Gaststätte "Rebstöckle" den Kleintierzuchtverein Marbach/N. Aus dieser kleinen Runde ist über neun Jahrzehnte eine lebendige Vereinsgemeinschaft geworden, die bis heute in der Poppenweilerstraße besteht. Die folgende Chronik fasst die wichtigsten Stationen zusammen.</p>
