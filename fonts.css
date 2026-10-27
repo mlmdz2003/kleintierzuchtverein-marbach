@@ -1,0 +1,67 @@
+/* Lokal gehostete Schriftarten (Roboto Slab, Karla, JetBrains Mono) - DSGVO-konform, keine Verbindung zu Google-Servern */
+
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/karla-v33-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/karla-v33-latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/karla-v33-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/karla-v33-latin-700.woff2') format('woff2');
+}
+
+/* Redesign (Direction A "Zuchtbuch & Preisrichter-Protokoll"): Roboto Slab fuer Headlines, JetBrains Mono fuer Protokoll-/Datenlabels. Beide selbst gehostet, keine Google-Verbindung. */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/roboto-slab-v22-latin-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/roboto-slab-v22-latin-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/roboto-slab-v22-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/roboto-slab-v22-latin-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/jetbrains-mono-v20-latin-500.woff2') format('woff2');
+}
